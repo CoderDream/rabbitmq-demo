@@ -10,9 +10,9 @@ V01. Simple Demo
 ---------------
 1、测试，先运行Receive,再运行Send两次，看到如下消费者(Receive的Console面板）能够接受到2条消息了，表明RabbitMQ的环境OK了。	
 ```	
-    [*] Waiting for messages. To exit press CTRL+C
-    [x] Received 'Hello World!'
-    [x] Received 'Hello World!'
+[*] Waiting for messages. To exit press CTRL+C
+[x] Received 'Hello World!'
+[x] Received 'Hello World!'
 ```
 
 2、cmd进到sbin目录，键入rabbitmq-plugins enable rabbitmq_management启用监控管理，然后重启RabbitMQ服务器。 
