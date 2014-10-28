@@ -12,6 +12,7 @@ V01. Simple Demo
 >	[*] Waiting for messages. To exit press CTRL+C  
 >	[x] Received 'Hello World!'
 >	[x] Received 'Hello World!'
+
 2、cmd进到sbin目录，键入rabbitmq-plugins enable rabbitmq_management启用监控管理，然后重启RabbitMQ服务器。 
 >	打开网址http://localhost:15672，用户名和密码都是guest。 
 >	这次我们关掉Receive，再次运行Send，然后点击管理网页上的Queue，可以看到有两个Message（hello）；
