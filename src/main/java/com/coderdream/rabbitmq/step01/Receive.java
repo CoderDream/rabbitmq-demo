@@ -1,4 +1,4 @@
-package com.coderdream.rabbitmq;
+package com.coderdream.rabbitmq.step01;
 import java.io.IOException;
 
 import com.rabbitmq.client.Channel;
