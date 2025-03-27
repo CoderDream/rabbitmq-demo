@@ -1,5 +1,6 @@
 package com.coderdream.rabbitmq.step02;
 
+import com.coderdream.rabbitmq.util.CdConstants;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -21,7 +22,7 @@ public class NewTask {
 
 	private static void sendMessage(int index) throws Exception {
 		ConnectionFactory factory = new ConnectionFactory();
-		factory.setHost("localhost");
+		factory.setHost(CdConstants.RABBITMQ_SERVER_IP);
 		Connection connection = factory.newConnection();
 		Channel channel = connection.createChannel();
 		// 声明此队列并且持久化
